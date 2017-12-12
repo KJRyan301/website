@@ -1,61 +1,68 @@
 <!DOCTYPE html>
-<html lang ="en">
+<html lang="en">
+
 <head>
-  <title>Kriston Ryan: Student Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Kriston Ryan: Student Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
 
-  <!-- Header -->
-  <nav class="header">
-    <ul>
-      <li>Home</li>
-      <li><a class="pagelink" href="#projects">Projects</a></li>
-      <li><a class="pagelink" href="#education">Education</a></li>
-      <li><a class="pagelink" href="#contact">Contact</a></li>
-      <li><a href="https://kjryan301.github.io/website/accessibility.html">Accessibility</a></li>
-    </ul>
-  </nav>
+    <!-- Header -->
+    <nav class="header">
+        <ul>
+            <li>Home</li>
+            <li><a class="pagelink" href="#projects">Projects</a>
+            </li>
+            <li><a class="pagelink" href="#education">Education</a>
+            </li>
+            <li><a class="pagelink" href="#contact">Contact</a>
+            </li>
+            <li><a href="https://kjryan301.github.io/website/accessibility.html">Accessibility</a>
+            </li>
+        </ul>
+    </nav>
 
-  <!-- Banner Section -->
-  <div class="banner">
-    <h1>Kriston Ryan</h1>
-      <p>Software Engineering Student</p>
-      
-  </div>
+    <!-- Banner Section -->
+    <div class="banner">
+        <h1>Kriston Ryan</h1>
+        <p>Software Engineering Student</p>
 
-  <!-- Projects-->
-  <div id="projects">
+    </div>
+
+    <!-- Projects-->
+    <div id="projects">
     </div>
     <!-- Projects Info-->
     <div class="editorial">
-      <h2>Projects</h2>    
-    <h3><a href="https://scratch.mit.edu/projects/176161408/#player">Scratch: Speed Pong</a><br></h3>
-    <h3><a href="https://kjryan301.github.io/website/exercises.html">JavaScript Exercises</a></h3>
-  
-      <h3>Graphics and Media</h3>
-      <h4>Canvas Element</h4>
-      
-      <!-- Canvas Element-->
-      <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
-Your browser does not support the HTML5 canvas tag.</canvas>
+        <h2>Projects</h2>
+        <h3><a href="https://scratch.mit.edu/projects/176161408/#player">Scratch: Speed Pong</a><br></h3>
+        <h3><a href="https://kjryan301.github.io/website/exercises.html">JavaScript Exercises</a></h3>
 
-<script>
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
+        <h3>Graphics and Media</h3>
+        <h4>Canvas Element</h4>
 
-// Create gradient
-var grd = ctx.createRadialGradient(75,50,5,90,60,100);
-grd.addColorStop(0,"blue");
-grd.addColorStop(1,"white");
+        <!-- Canvas Element-->
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+            Your browser does not support the HTML5 canvas tag.</canvas>
 
-// Fill with gradient
-ctx.fillStyle = grd;
-ctx.fillRect(10,10,150,80);
-</script><br><br><br>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            // Create gradient
+            var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+            grd.addColorStop(0, "blue");
+            grd.addColorStop(1, "white");
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(10, 10, 150, 80);
+        </script>
+        <br>
+        <br>
+        <br>
 
-<!-- SVG Element-->
-<h4>SVG Element<h4>
+        <!-- SVG Element-->
+        <h4>SVG Element<h4>
 <svg height="140" width="140">
   <defs>
     <filter id="f1" x="0" y="0" width="200%" height="200%">
@@ -70,58 +77,63 @@ ctx.fillRect(10,10,150,80);
       <!-- Career Fields Report -->
       <a href="https://www.scribd.com/document/364727832/Fields-Report-COP-1500?secret_password=mFMaf3DxrQtVq4nsnAbM">Career Fields Report</a><br><br>
      
-	 <h4>Audio Element</h4> 
-  <audio controls>
-    <source src= "dogbark.wav" type="audio/wav">
-  
-   Your browser does not support the audio element.
-  </audio><br>
-  
-  <p><em>More Coming Soon</em></p>
+	 <h4>Audio Element</h4>
+        <audio controls>
+            <source src="dogbark.wav" type="audio/wav">
+
+                Your browser does not support the audio element.
+        </audio>
+        <br>
+
+        <p><em>More Coming Soon</em>
+        </p>
     </div>
 
-    
-    
 
-  <!-- Education-->
-  <div id="education">
-  </div>
+
+
+    <!-- Education-->
+    <div id="education">
+    </div>
     <!-- Education Info-->
     <div class="editorial">
-      <h2>Education</h2>
-      <p>I am currently majoring in software engineering at <a href="https://www2.fgcu.edu/">Florida Gulf Coast University.</a> </p> 
-      <p><em></em></p>
+        <h2>Education</h2>
+        <p>I am currently majoring in software engineering at <a href="https://www2.fgcu.edu/">Florida Gulf Coast University.</a> </p>
+        <p><em></em>
+        </p>
     </div>
 
-  <!-- FGCU Picture -->  
-    <img src="https://www.gannett-cdn.com/-mm-/a1e6a03ada0d9754f2ac3fbd3e781dda2ad1b413/c=169-0-3572-2559&r=x393&c=520x390/local/-/media/2017/08/16/FortMyers/FortMyers/636384831217090390-FGCU-air-001.JPG" alt="Image of Florida Gulf Coast University" style= "width:400px;height:300;">  <div class="editorial">
-    <p>Image of Florida Gulf Coast University</p>
-</div>
+    <!-- FGCU Picture -->
+    <img src="https://www.gannett-cdn.com/-mm-/a1e6a03ada0d9754f2ac3fbd3e781dda2ad1b413/c=169-0-3572-2559&r=x393&c=520x390/local/-/media/2017/08/16/FortMyers/FortMyers/636384831217090390-FGCU-air-001.JPG" alt="Image of Florida Gulf Coast University" style="width:400px;height:300;">
+    <div class="editorial">
+        <p>Image of Florida Gulf Coast University</p>
+    </div>
 
-  <!-- Contact Section -->
-  <div id="contact">
-  </div>
+    <!-- Contact Section -->
+    <div id="contact">
+    </div>
     <!-- Contact Info -->
-    
-   <div class="editorial">
-     <h2>Contact Information</h2>
-      <p>Kriston Ryan</p>
-      <p>Email:kjmryan02@yahoo.com</p>
-      <p><em></em></p>
+
+    <div class="editorial">
+        <h2>Contact Information</h2>
+        <p>Kriston Ryan</p>
+        <p>Email:kjmryan02@yahoo.com</p>
+        <p><em></em>
+        </p>
     </div>
 
-    
+
     <!-- Bottom of Page Photo -->
-     <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="Image of a computer screen" style= "width:400px;height:300;"> 
- 
- <!-- Footer-->
- <div class="editorial">    
-   <p>Image of a computer screen.</p>
- </div>
- 
+    <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="Image of a computer screen" style="width:400px;height:300;">
 
-    
+    <!-- Footer-->
+    <div class="editorial">
+        <p>Image of a computer screen.</p>
+    </div>
+
+
+
 </body>
-</html>
 
+</html>
 
