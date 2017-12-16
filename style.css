@@ -105,13 +105,4 @@ img{
    display: block;
    margin: auto;
    width: 40%
-
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: green;
-   color: white;
-   text-align: center;
 }
